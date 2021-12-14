@@ -4,6 +4,7 @@ import android.content.Context
 import io.agora.rtc.*
 import io.agora.rtc.internal.EncryptionConfig
 import io.agora.rtc.models.UserInfo
+import io.agora.rtc.proxy.LocalAccessPointConfiguration
 
 class IRtcEngine {
   interface RtcEngineInterface : RtcUserInfoInterface, RtcAudioInterface, RtcVideoInterface,
@@ -562,16 +563,20 @@ open class RtcEngineManager(
   override fun setLocalAccessPoint(params: Map<String, *>, callback: Callback) {
     callback.code(
       engine?.setLocalAccessPoint(
-        arrayListOf<String>().apply {
-          (params["ips"] as? List<*>)?.let { list ->
-            list.forEach { item ->
-              (item as? String)?.let {
-                add(it)
+        LocalAccessPointConfiguration().apply {
+          ipList = arrayListOf<String>().apply {
+            (params["ips"] as? List<*>)?.let { list ->
+              list.forEach { item ->
+                (item as? String)?.let {
+                  add(it)
+                }
               }
             }
           }
-        },
-        params["domain"] as String
+          domainList = arrayListOf<String>().apply {
+            add(params["domain"] as String)
+          }
+        }
       )
     )
   }
