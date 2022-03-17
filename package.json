@@ -1,7 +1,7 @@
 {
-  "name": "react-native-agora",
-  "version": "3.5.2-rc.0",
-  "description": "Agora RTC SDK For React Native",
+  "name": "react-native-agora-android-echo-fix",
+  "version": "3.6.0",
+  "description": "Fork of Agora RTC SDK For React Native to fix current echo problem",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -38,13 +38,13 @@
     "chat",
     "live"
   ],
-  "repository": "https://github.com/AgoraIO-Community/react-native-agora",
-  "author": "HUI <luxuhui@agora.io> (https://github.com/LichKing-2234)",
+  "repository": "https://github.com/boemjay/react-native-agora",
+  "author": "Benjamin Mollier <benjamin.mollier@live.de> (https://github.com/boemjay)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AgoraIO-Community/react-native-agora/issues"
+    "url": "https://github.com/boemjay/react-native-agora/issues"
   },
-  "homepage": "https://github.com/AgoraIO-Community/react-native-agora#readme",
+  "homepage": "https://github.com/boemjay/react-native-agora#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",

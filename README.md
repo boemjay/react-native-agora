@@ -1,3 +1,12 @@
+# FORK Reason
+
+This fork only exists to temporarily solve [this issue](https://github.com/AgoraIO-Community/react-native-agora/issues/445).
+
+I basically only replaced the Agora dependency for android binding to 'io.agora.rtc:full-sdk:3.6.0', which removed this problem for me.
+
+To use this fix, either build your own npm package or use my prebuilt package, based on this repository:
+[react-native-agora-android-echo-fix](https://www.npmjs.com/package/react-native-agora-android-echo-fix)
+
 # react-native-agora
 
 [![npm](https://img.shields.io/npm/v/react-native-agora.svg)](https://www.npmjs.com/package/react-native-agora)
@@ -14,6 +23,7 @@ This SDK takes advantage of React Native and Agora RTC Video SDK on Android && i
 The community developer [Syanbo](https://github.com/syanbo) developed 1.0 version React Native SDK based on the Agora Native SDK from 2016 to 2017. As the community's demand for React Native SDK keeps growing, Agora has achieved official cooperation with Syanbo, this project now is officially maintained by Agora. Thanks to Syanbo for his long-term contributions to React Native SDK.
 
 ## Release Note
+
 [Changelog](CHANGELOG.md)
 
 ## Installation
@@ -25,7 +35,9 @@ Install `react-native-agora`(^3.0.0):
 ```shell script
 yarn add react-native-agora
 ```
+
 or
+
 ```shell script
 npm i --save react-native-agora
 ```
@@ -49,7 +61,9 @@ Install `react-native-agora`(^3.0.0):
 ```shell script
 yarn add react-native-agora
 ```
+
 or
+
 ```shell script
 npm i --save react-native-agora
 ```
@@ -76,7 +90,9 @@ We no longer support, you can try the older version.
 import RtcEngine from 'react-native-agora';
 RtcEngine.create('YOUR APP ID');
 ```
+
 or
+
 ```javascript
 const RtcEngine = require('react-native-agora');
 RtcEngine.create('YOUR APP ID');
@@ -86,8 +102,8 @@ RtcEngine.create('YOUR APP ID');
 
 We suggest you use TypeScript to develop, or use TypeScript eslint to lint your code.
 
-* [Getting Started with TypeScript](https://reactnative.dev/docs/typescript#getting-started-with-typescript)
-* [Adding TypeScript to an Existing Project](https://reactnative.dev/docs/typescript#adding-typescript-to-an-existing-project)
+- [Getting Started with TypeScript](https://reactnative.dev/docs/typescript#getting-started-with-typescript)
+- [Adding TypeScript to an Existing Project](https://reactnative.dev/docs/typescript#adding-typescript-to-an-existing-project)
 
 ## Troubleshooting
 
@@ -141,15 +157,15 @@ Source: https://github.com/facebook/react-native/issues/25154
 
 ## API
 
-* [React Native API](https://agoraio-community.github.io/react-native-agora/globals.html)
-* [Android API](https://docs.agora.io/en/Video/API%20Reference/java/index.html)
-* [iOS API](https://docs.agora.io/en/Video/API%20Reference/oc/docs/headers/Agora-Objective-C-API-Overview.html)
+- [React Native API](https://agoraio-community.github.io/react-native-agora/globals.html)
+- [Android API](https://docs.agora.io/en/Video/API%20Reference/java/index.html)
+- [iOS API](https://docs.agora.io/en/Video/API%20Reference/oc/docs/headers/Agora-Objective-C-API-Overview.html)
 
 ## Resources
 
-* Complete [API Doc](https://docs.agora.io/en/) at the Developer Center
-* [File bugs about this sample](https://github.com/AgoraIO-Community/react-native-agora/issues)
-* [React Native Getting Started](https://facebook.github.io/react-native/docs/getting-started.html)
+- Complete [API Doc](https://docs.agora.io/en/) at the Developer Center
+- [File bugs about this sample](https://github.com/AgoraIO-Community/react-native-agora/issues)
+- [React Native Getting Started](https://facebook.github.io/react-native/docs/getting-started.html)
 
 ## Contributing
 
